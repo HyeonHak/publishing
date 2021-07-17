@@ -17,13 +17,20 @@ header h1 a {
     background: url("../images/sp_com.png") no-repeat -300px 0;
 }
 
-.lnb ul li a{
+.header .lnb ul li a {
     display: block;
     height: 81px;
     font-size: 18px;
     font-weight: 300;
     padding: 0 35px 0;
     line-height: 81px;
+}
+
+.header .lnb ul li a:hover {
+    color: #2d5b79;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 header nav ul {
@@ -43,6 +50,11 @@ header nav ul {
     height: 7px;
     background: gray;
     transform: translateY(-50%);
+}
+
+.header .spot ul li:hover {
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .header .spot ul li:first-child:after {
