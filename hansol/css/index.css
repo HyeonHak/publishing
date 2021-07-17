@@ -8,6 +8,7 @@
 header h1 {
     padding: 14px 0 0 0;
 }
+
 header h1 a {
     display: block;
     width: 110px;
@@ -15,8 +16,6 @@ header h1 a {
     color: transparent;
     background: url("../images/sp_com.png") no-repeat -300px 0;
 }
-
-
 
 .lnb ul li a{
     display: block;
@@ -32,7 +31,22 @@ header nav ul {
     justify-content: space-around;
 }
 
-.spot {
+.header .spot {
+    position: relative;
+}
+
+.header .spot ul li:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 7px;
+    background: gray;
+    transform: translateY(-50%);
+}
+
+.header .spot ul li:first-child:after {
+    display: none;
 }
 
 .spot ul li a {
@@ -40,6 +54,10 @@ header nav ul {
     height: 81px;
     font-size: 14px;
     line-height: 81px;
-    padding: 0 20px 0;
+    padding: 0 10px 0;
     font-weight: 200;
+}
+
+.spot ul li:last-child a {
+    padding-right: 0;
 }
