@@ -127,6 +127,7 @@ header nav ul {
 
 .slider .controller .sliderButton ul li{
     display: inline-block;
+    margin: 0 1.5px;
 }
 
 .slider .controller .sliderButton{
@@ -146,7 +147,13 @@ header nav ul {
     display: block;
     color: transparent;
     overflow: hidden;
+    margin: 0 4px;
+    opacity: 0.5;
     background: url("../images/sp_com.png") no-repeat center;
+}
+
+.slider .controller .sliderButton > div.on a {
+    opacity: 1;
 }
 
 .slider .controller .sliderButton .start{
@@ -161,7 +168,7 @@ header nav ul {
 .slider .controller .sliderButton ul {
     position: relative;
     bottom: -7px;
-    padding: 0 50px 0 0;
+    padding: 0 30px 0 0;
 }
 
 .slider .controller .sliderButton ul, .slider .controller .sliderButton ul li{
