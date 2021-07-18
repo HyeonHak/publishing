@@ -73,3 +73,109 @@ header nav ul {
 .spot ul li:last-child a {
     padding-right: 0;
 }
+
+.slider { position: relative; padding: 0 50px; }
+
+.slider .sliderContainer .sliderContent {
+    height: 690px;
+    width: 100%;
+    background: url("../images/bg_main00.jpg");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .sliderContainer .sliderContent p {
+    font-size: 26px;
+    font-weight: 300;
+}
+.slider .sliderContainer .sliderContent span {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+
+.slider .controller .sliderButton > div {
+    display: inline-block;
+}
+
+.slider .controller .prev, .slider .controller .next {
+    position: absolute;
+    width: 30px;
+    height:48px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+    background: url("../images/sp_com.png") no-repeat center;
+}
+
+.slider .controller {
+    background-position: -128px -60px;
+}
+
+.slider .controller .prev {
+    left: 80px;
+    background-position: -128px -60px;
+}
+
+.slider .controller .next {
+    right: 80px;
+    display: block;
+    background-position: -158px -60px;
+}
+
+.slider .controller .sliderButton ul li{
+    display: inline-block;
+}
+
+.slider .controller .sliderButton{
+    position: absolute;
+    left: 0px;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .controller .sliderButton > div a{
+    width: 8px;
+    height: 9px;
+    display: block;
+    color: transparent;
+    overflow: hidden;
+    background: url("../images/sp_com.png") no-repeat center;
+}
+
+.slider .controller .sliderButton .start{
+    background-position: -108px -72px;
+}
+
+.slider .controller .sliderButton .pause{
+    background-position: -108px -60px;
+}
+
+
+.slider .controller .sliderButton ul {
+    position: relative;
+    bottom: -7px;
+    padding: 0 50px 0 0;
+}
+
+.slider .controller .sliderButton ul, .slider .controller .sliderButton ul li{
+    display: inline-block;
+}
+
+.slider .controller .sliderButton ul li a {
+    color: transparent;
+    background-color: rgba(255,255,255,0.5);
+    width: 50px;
+    height: 3px;
+    display: block;
+}
+
+.slider .controller .sliderButton ul li.on a{
+    background-color: #fff;
+}
