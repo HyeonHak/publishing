@@ -183,6 +183,54 @@ header nav ul {
     display: block;
 }
 
-.slider .controller .sliderButton ul li.on a{
+.slider .controller .sliderButton ul li.on a {
     background-color: #fff;
+}
+
+.product { height: 180px; padding: 50px 50px;}
+.product ul {
+    display: flex;
+    justify-content: center;
+}
+
+.product span {
+    display: inline-block;
+    width: 62px;
+    height: 52px;
+    background: url("../images/sp_com.png") no-repeat center;
+}
+
+.product li:nth-child(1) span { background-position: -3px -118px; }
+.product li:nth-child(2) span { background-position: -75px -118px; }
+.product li:nth-child(3) span { background-position: -148px -118px; }
+.product li:nth-child(4) span { background-position: -219px -118px; }
+.product li:nth-child(5) span { background-position: -292px -118px; }
+.product li:nth-child(6) span { background-position: -364px -118px; }
+
+.product li:nth-child(1) span:hover { background-position: -3px -184px; }
+.product li:nth-child(2) span:hover { background-position: -75px -184px; }
+.product li:nth-child(3) span:hover { background-position: -148px -184px; }
+.product li:nth-child(4) span:hover { background-position: -219px -184px; }
+.product li:nth-child(5) span:hover { background-position: -292px -184px; }
+.product li:nth-child(6) span:hover { background-position: -364px -184px; }
+
+.product a:hover {
+    color: #2d5b79;
+    font-weight: bold;
+}
+
+.product ul li a {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 174px;
+    height: 100px;
+}
+
+.product ul li a p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
 }
